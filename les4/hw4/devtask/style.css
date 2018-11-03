@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1200px;
+
+}
+
+.controlbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/*Сверстайте контрол оценки и показа рейтинга*/
+.pointsbar {
+    float: left;
+    font-size: 25px;
+}
+
+.pointsbar:not(:checked) > input {
+    cursor: pointer;
+}
+
+.pointsbar:not(:checked) > label {
+    float: right;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.pointsbar:not(:checked) > label:before {
+    content: '★';
+}
+
+.pointsbar > input:checked ~ label {
+    color: gold;
+}
+
+.pointsbar:not(:checked) > label:hover,
+.pointsbar:not(:checked) > label:hover ~ label {
+    color: goldenrod;
+}
+
+.point1 {
+    display: none;
+}
+
+.point2 {
+    display: none;
+}
+
+.point3 {
+    display: none;
+}
+
+.point4 {
+    display: none;
+}
+
+.point5 {
+    display: none;
+}
+
+/*Сверстайте прогресс-бар*/
+
+.progress-value {
+    color: #333;
+    display: block;
+    line-height: 21px;
+    text-align: center;
+}
+
+/*button*/
+
+.button {
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+
+}
+
+.button:hover {
+    background: grey;
+    color: white;
+    font-weight: bold;
+}
+
+/*браузеры*/
+
+img {
+    height: 125px;
+    width: 125px;
+    margin: 15px;
+}
+
+.browser-line > img:first-child:before {
+    content: "Ch";
+    color: #6EB75D;
+}
+
+.browser-line > img:first-child {
+    color: #FADA37;
+}
+
+.browser-line > img:first-child:after {
+    content: "me";
+    color: #DE6C6A;
+}
+
+.browser-line > img:nth-child(2) {
+    color: #F6C05D;
+}
+
+.browser-line > img:nth-child(3) {
+    color: #CB3B39;
+}
+
+.browser-line > img:nth-child(4) {
+    color: #727272;
+}
+.browser-line > img:nth-child(5) {
+    color: #4885B1;
+    padding-left: 340px;
+
+}
+.text-columns {
+    text-align: left;
+    column-count: 2;
+    column-gap: 8%;
+}
+
+h2
+{
+    text-align: left;
+    margin: 10px 0 10px 5px;
+}

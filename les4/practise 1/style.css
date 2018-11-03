@@ -1,0 +1,95 @@
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: lightblue;
+}
+
+.card
+{
+	width: 100%;
+	max-width: 478px;
+	display: block;
+	font-size: 28px;
+	color: #fff;
+	/*color: #FF5353*/
+}
+
+.profile
+{
+	width: 100%;
+	display: flex; /*центрирование*/
+	padding: 62px 12px 100px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /*выстраивание в колонку*/
+	background: url("https://i.stack.imgur.com/Of2w5.jpg") center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.profile::before
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: black;
+	opacity: 0.5; 
+}
+
+
+.avatar
+{
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 205px;
+	z-index: 1;
+}
+.username
+{
+	margin: 34px 0 18px;
+	font-size: 1.57em;
+	z-index: 1;
+}
+
+.twitter-login
+{
+	z-index: 1;
+}
+
+.nav
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+
+}
+
+.nav__button
+{
+	flex: 1 1 auto; /*разрешили увеличение дефоолт расстояние по контенту авто флекс базис*/
+}
+
+.nav-link
+{
+	background: #ff6664;
+	display: block;
+	width: 100%;
+	height: 100px;
+}
+
+.nav__button: not(:first-child)
+{
+	border-left: 1px solid #fff;
+}

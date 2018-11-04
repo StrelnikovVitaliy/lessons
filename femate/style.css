@@ -1,0 +1,32 @@
+html,body{
+    background: black;
+    color:white;
+}
+
+h1,h2,h3{}
+p, blockquote, pre, code, ol, ul{}
+
+/* Структурные элементы */
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+
+    padding: 20px;
+}
+
+.content{
+    width: 54%;
+    float: left;
+    margin-right: 3%;
+}
+
+.left-sidebar{
+    width: 20%;
+    float: left;
+    margin-right: 3%;
+}
+
+.right-sidebar{
+    width: 20%;
+    float: left;
+}

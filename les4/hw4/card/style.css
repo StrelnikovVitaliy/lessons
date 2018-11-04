@@ -127,13 +127,14 @@ p {
 {
     height: 60px;
     width: 60px;
+margin-right: 5%;
 }
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     color: white;
     height: 100px;

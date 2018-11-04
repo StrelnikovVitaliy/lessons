@@ -1,32 +1,196 @@
-html,body{
-    background: black;
-    color:white;
+body {
+    padding: 0;
+    margin: 0;
 }
 
-h1,h2,h3{}
-p, blockquote, pre, code, ol, ul{}
+header {
+    background: url("img/firstbcg.jpg")no-repeat center top / cover;
+    padding-bottom: 80px;
+}
 
-/* Структурные элементы */
-.wrapper{
-    width: 80%;
+.container {
+    width: 600px;
     margin: 0 auto;
+}
 
+/*first container with menu*/
+.container__logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-top: 65px;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    margin-top: 80px;
+}
+
+.menu li {
+    float: left;
+    display: block;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
     padding: 20px;
+    font-size: 13pt;
 }
 
-.content{
-    width: 54%;
-    float: left;
-    margin-right: 3%;
+.titles__first {
+    font-size: 38pt;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
 }
 
-.left-sidebar{
-    width: 20%;
-    float: left;
-    margin-right: 3%;
+h1 {
+    font-size: 15pt;
+    color: white;
+    text-align: center;
 }
 
-.right-sidebar{
-    width: 20%;
-    float: left;
+.button-first {
+    text-align: center;
+    display: block;
+    padding: 18px 0;
+    margin: 80px auto;
+    text-decoration: none;
+    background: linear-gradient(#4c4c4c 0%, #595959 12%, #666666 25%,
+    #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%,
+    #1c1c1c 91%, #131313 100%);
+    color: white;
+    width: 235px;
+    border-radius: 40px;
 }
+
+/*end menu container*/
+
+
+/*description menu*/
+
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description__item {
+    width: 100%;
+    margin: 20px auto;
+
+}
+
+.description__item h3 {
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    border-bottom: black solid;
+}
+
+.description__item p {
+    font-size: 15px;
+}
+
+.button-second {
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    width: 100px;
+    border-radius: 40px;
+}
+
+/* end description menu*/
+/*information menu*/
+#cv {
+    background: black;
+}
+
+.cv {
+    display: flex;
+
+}
+
+.cv__item {
+    width: 100%;
+    margin: 60px auto;
+
+}
+
+.cv__item h3 {
+    font-size: 23px;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: #ebebeb solid;
+}
+
+.cv__item p {
+    font-size: 13px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.button-third {
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    background: white;
+    color: black;
+    width: 100px;
+    border-radius: 40px;
+}
+
+/* end information menu*/
+/*block send it now*/
+
+/*footer last line social and autor*/
+#social{
+    background: black;
+
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copiried p {
+    color: #787b80;
+}
+
+.copiried span {
+    color: #aaacaf;
+}
+
+.social__links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__links img{
+    padding: 0 15px 0 20px;
+    height: 60px;
+    width: 60px;
+}
+
+
+
+/*end footer last line social and autor*/

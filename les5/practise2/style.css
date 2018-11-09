@@ -1,0 +1,110 @@
+.block {
+    margin-bottom: 10px;
+}
+
+.block > div:not(.clearfix) {
+    background: #00BCD4;
+    border: 1px solid #fff;
+    height: 150px;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+
+.clearfix {
+    width: 100%;
+    float: none;
+    position: relative;
+}
+
+.clearfix:after {
+    height: 1px;
+    width: 100%;
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.inside {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+}
+
+/* 1 block -> 4 elements in a row: all equal width >= 1800px */
+.first {
+    display: block;
+    width: 100%;
+}
+
+.first .plain.colored {
+    float: left;
+    width: calc(25% - 2px);
+}
+
+.second .colored.colored {
+    float: left;
+    width: calc(50% - 2px);
+}
+
+.third .colored.colored {
+    float: left;
+    width: 25%;
+}
+
+.fourth .colored.colored {
+    float: left;
+    width: calc(25% - 2px);
+}
+
+.fourth .colored.colored:nth-last-child(2) {
+    width: calc(50% - 2px);
+}
+
+.fifth .colored.colored {
+    float: left;
+    width: calc(20% - 2px);
+}
+
+@media (max-width: 1800px) {
+    .first .plain.colored {
+        float: left;
+        width: calc(50% - 2px);
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .third .colored.colored {
+        float: left;
+        width: calc(100%/3 - 2px);
+    }
+}
+
+@media (max-width: 960px) {
+    .third .colored.colored {
+        width: calc(100% - 2px);
+    }
+}
+@media (max-width: 768px) {
+    .fifth .colored.colored {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
